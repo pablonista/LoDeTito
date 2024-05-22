@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+/*css fuente*/
+    .poppins-thin {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+      }
+      
+      .poppins-extralight {
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+      }
+      
+      .poppins-light {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      
+      .poppins-regular {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .poppins-medium {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+      }
+      
+      .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+      }
+      
+      .poppins-bold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+      .poppins-extrabold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+      }
+      
+      .poppins-black {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+      }
+      
+      .poppins-thin-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+      }
+      
+      .poppins-extralight-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: italic;
+      }
+      
+      .poppins-light-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-style: italic;
+      }
+      
+      .poppins-regular-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+      }
+      
+      .poppins-medium-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+      }
+      
+      .poppins-semibold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: italic;
+      }
+      
+      .poppins-bold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+      }
+      
+      .poppins-extrabold-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: italic;
+      }
+      
+      .poppins-black-italic {
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+      }
+
+
+      /*
+      PALETA DE COLORES A USAR 
+      #FFF2D8
+      #EAD7BB
+      #BCA37F
+      #113946
+      */
+ 
+/*estilos del nav*/
+.bgColor{
+    background-color: #BCA37F
+}
+
+.navbar{
+    display: flex;
+    font-size: 1rem ;
+    padding: 1rem;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.navbar-brand{
+  margin-left: 5%;
+  font-size:50%;
+}
+ .navbar-nav{
+  margin-right: 7%;
+} 
+
+
+ul.dropdown-menu{
+  background-color: #BCA37F; /* Cambia al color de fondo deseado */
+}
+
+.a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.caja1{
+  color:white;
+  font-size: 2rem;
+  padding-left: 5%;
+}
+.caja2{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem; 
+    padding-right: 5%;
+}  
+
+
+.titulo{
+  font-size: 2rem;
+}
+
+.carousel-caption{
+   height: 40%;
+   align-items: center;
+   
+
+}
+
+/*.carousel-item img {
+        filter: blur(4px); /* ajusta el valor para cambiar el grado de desenfoque 
+    }*/
+    
+
+
+img{
+    width: 100%;
+    max-height: 90vh;
+}
+
+.foot{
+    background-color: #BCA37F;
+    height: 10%;
+    
+}
+.lista {
+    list-style: none;
+    padding: 1%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .lista li {
+    display: inline-block; /* Hace que los elementos de la lista se muestren uno al lado del otro */
+    margin-right: 10px; /* Añade un pequeño margen entre los elementos */
+  }
+  
+  
