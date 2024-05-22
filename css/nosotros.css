@@ -42,7 +42,7 @@
 }
 
 .center{
-        align-items: center;
+    align-items: center;
     margin-bottom: 2rem;   
 }
 
@@ -182,4 +182,11 @@
     width: 100%;
     height: auto;
     animation: zoom 8s infinite;
+}
+
+@media (max-width: 768px) {
+    /* Estilos para dispositivos con ancho máximo de 768px (tabletas y móviles) */
+    .section {
+        padding: 20px;
+    }
 }

@@ -23,3 +23,12 @@ index.html (index.css), registro_usuario.html(registro.css),nuevo_usuario.html(u
 /-------------------------------------------------------------------------------------------------
 Cambiar cuando inicie como usuario el navbar que no salga inicio de sesion y Registro
 Cambiar cuando ingreso como usuario cambiar los link registro, 
+/-------------------------------------------------------------------------------------------------
+Index ===> responsive
+Lista_Usuarios ===> responsive
+Lista_Menu ==>responsive
+Editar_usuario ===> responsive
+Login ===> responsive
+Registro_usuario ===> responsive
+Nuevo_usuario ===> responsive
+

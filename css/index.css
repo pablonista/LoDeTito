@@ -1,7 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 /*css fuente*/
     .poppins-thin {
@@ -121,90 +122,126 @@
       #113946
       */
  
-/*estilos del nav*/
-.bgColor{
-    background-color: #BCA37F
+/* Paleta de colores */
+:root {
+  --color-bg: rgb(10, 78, 101); /* #BCA37F */
+  --color-text-light: white;
+  --color-footer-bg: rgb(10, 78, 101); /* #BCA37F */
 }
 
-.navbar{
-    display: flex;
-    font-size: 1rem ;
-    padding: 1rem;
-    justify-content: space-evenly;
-    text-align: center;
+/* Estilos del nav */
+.bgColor {
+  background-color: var(--color-bg);
 }
-.navbar-brand{
-  margin-left: 5%;
-  font-size:50%;
+
+.navbar {
+  font-size: 1rem;
+  padding: 1rem;
 }
- .navbar-nav{
+
+.navbar-brand {
+  font-size: 1.5rem; /* Ajuste de tamaño para pantallas grandes */
+}
+
+.navbar-nav {
   margin-right: 7%;
-} 
-
-
-ul.dropdown-menu{
-  background-color: #BCA37F; /* Cambia al color de fondo deseado */
 }
 
-.a{
-    text-decoration: none;
-    color: white;
-
+ul.dropdown-menu {
+  background-color: var(--color-bg);
 }
 
-.caja1{
-  color:white;
+.a {
+  text-decoration: none;
+  color: var(--color-text-light);
+}
+
+.caja1 {
+  color: var(--color-text-light);
   font-size: 2rem;
   padding-left: 5%;
 }
-.caja2{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 1rem; 
-    padding-right: 5%;
-}  
 
+.caja2 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  padding-right: 5%;
+}
 
-.titulo{
+.titulo {
   font-size: 2rem;
 }
 
-.carousel-caption{
-   height: 40%;
-   align-items: center;
-   
-
+.carousel-caption {
+  height: 40%;
+  align-items: center;
 }
 
-/*.carousel-item img {
-        filter: blur(4px); /* ajusta el valor para cambiar el grado de desenfoque 
-    }*/
-    
-
-
-img{
-    width: 100%;
-    max-height: 90vh;
+img {
+  width: 100%;
+  max-height: 90vh;
 }
 
-.foot{
-    background-color: #BCA37F;
-    height: 10%;
-    
+.foot {
+  background-color: var(--color-footer-bg);
+  height: 10%;
 }
+
 .lista {
-    list-style: none;
-    padding: 1%;
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
+  list-style: none;
+  padding: 1%;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lista li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Media Queries para hacer la página responsiva */
+@media (max-width: 768px) {
+  .navbar-brand {
+      font-size: 1rem; /* Ajuste de tamaño para pantallas pequeñas */
   }
-  
+
+  .navbar-nav {
+      margin-right: 0;
+  }
+
+  .navbar-toggler {
+      margin-right: 1rem;
+  }
+
+  .navbar-collapse {
+      background-color: var(--color-bg);
+  }
+
+  .carousel-caption {
+      height: auto;
+      padding: 1rem;
+  }
+
+  .carousel-caption h5 {
+      font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+      font-size: 1rem;
+  }
+
+  .lista {
+      flex-direction: column;
+      align-items: center;
+  }
+
   .lista li {
-    display: inline-block; /* Hace que los elementos de la lista se muestren uno al lado del otro */
-    margin-right: 10px; /* Añade un pequeño margen entre los elementos */
+      margin: 0.5rem 0;
   }
+}
   
   
