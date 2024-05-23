@@ -111,10 +111,14 @@ body, h1, h2, h3, p {
     align-items: stretch; /* Cambiado a 'stretch' para igualar alturas */
 }
 
-.imagen-footer {
-    background-color: rgba(145, 140, 140, 0.75);
+.imagen-footer,
+.texto-footer,
+.mapa-footer {
+    background-color: rgba(0, 0, 0, 0.75);
     padding: 10px;
     border-radius: 10px;
+}
+.imagen-footer {
     width: 15%;
     margin-bottom: 10px;
     display: flex;
@@ -122,17 +126,11 @@ body, h1, h2, h3, p {
 }
 
 .texto-footer {
-    background-color: rgba(145, 140, 140, 0.75);
-    padding: 10px;
-    border-radius: 10px;
     width: 50%;
     margin-bottom: 10px;
 }
 
 .mapa-footer {
-    background-color: rgba(145, 140, 140, 0.75);
-    padding: 10px;
-    border-radius: 10px;
     width: 32%;
     margin-bottom: 10px;
     display: flex; /* Asegurar que el contenido del mapa también se estire */
@@ -142,7 +140,8 @@ body, h1, h2, h3, p {
 .imagen-footer:hover,
 .mapa-footer:hover,
 .texto-footer:hover {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(145, 140, 140, 0.75);
+    color: black; 
 }
 
 .imagen-footer img {
