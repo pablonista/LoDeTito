@@ -1,171 +1,167 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* Tipografía general */
+body, h1, h2, h3, p {
+    font-family: "Poppins", sans-serif;
+}
 
-
-.historia{
+/* Flexbox para la sección de historia */
+.historia {
     display: flex;
     flex-direction: column;
     padding: 10%;
     width: 100%;
-    height: 90vh;
     justify-content: center;
     align-items: center;
-    font-family: "Poppins", sans-serif;
-    font-weight: 300;
     font-style: italic;
-    
-    
-    
 }
-/* #FFF2D8
-      #EAD7BB
-      #BCA37F
-      #113946*/
-.contenido img{
-        display: block; 
-        width: 100%; 
-        height: 95vh; 
-      }
 
+/* Imagen y texto superpuesto */
+.contenido {
+    position: relative;
+    margin-top: 5px; /* Añade margen superior para evitar superposición con el navbar */
+}
 
-.textoSuperpuesto{
+.contenido img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.textoSuperpuesto {
     position: absolute; 
-    top: 50%; 
+    top: 44%; 
     left: 50%; 
     transform: translate(-50%, -50%);
-    color:#EAD7BB; 
-    text-align: center; 
-   
-    background: linear-gradient( rgba(94, 45, 5, 0.5), rgba(0,0,0,0.8));
-    padding: 20px;
-    font-family: "Poppins", sans-serif;
-    font-style: italic;
+    color: #EAD7BB;
+    text-align: center;
+    background: linear-gradient(rgba(94, 45, 5, 0.5), rgba(0, 0, 0, 0.8));
+    padding: 10px;
+    font-size: 1.5vw; /* Ajusta el tamaño del texto dinámicamente */
+    max-width: 80%; /* Asegura que el texto no exceda el 90% del ancho del contenedor */
+    max-height: 80%;
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
 }
 
-.center{
-    align-items: center;
-    margin-bottom: 2rem;   
-}
-
-
-.margen {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-}
+/* Estilos para secciones y tarjetas */
 .section {
     padding: 40px;
     text-align: center;
     background-color: #ffffff;
 }
+
 .section h2 {
     margin-bottom: 20px;
     font-size: 2em;
     color: #333;
 }
+
 .card-container {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
+
 .card {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .card:hover {
     transform: scale(1.05); /* Agranda la card */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Añade sombra más profunda */
 }
+
 .card img {
     width: 100%;
-    height: 300px; /* Altura fija */
-    object-fit: cover; /* Ajusta la imagen para que cubra el área */
+    height: auto;
+    object-fit: cover;
 }
+
 .card .content {
     padding: 15px;
 }
+
 .card .content h3 {
     margin: 0 0 10px;
     font-size: 1.2em;
     color: #333;
 }
+
 .card .content p {
     margin: 0;
     color: #555;
 }
 
-.container-footer{
+/* Footer */
+.container-footer {
     display: flex;
-    justify-content:space-between;
-    padding: 100px;
-    background-color: #2050CB;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(10, 78, 101);
     border-radius: 10px;
     margin-top: 10px;
-    background-image: url(../assets/imagenes/Logo/Logo01.jpeg);
-    background-size: contain;
+    align-items: stretch; /* Cambiado a 'stretch' para igualar alturas */
 }
 
-.imagen-footer{
-    background-color: rgba(
-      145,
-      140,
-      140,
-      0.5
-    );
+.imagen-footer {
+    background-color: rgba(145, 140, 140, 0.75);
     padding: 10px;
     border-radius: 10px;
-    width: 200px;
-    height: 200px;
+    width: 15%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
 
-.texto-footer{
-    background-color: rgba(
-      145,
-      140,
-      140,
-      0.75
-    );
+.texto-footer {
+    background-color: rgba(145, 140, 140, 0.75);
     padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
     border-radius: 10px;
-    width: 1100px;
-    height: 200px;
-    color:aliceblue;
-    text-align: justify;
-    font-weight: bold;
-    position:relative; 
-    padding: 0 25px;
-    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
+    width: 50%;
+    margin-bottom: 10px;
 }
+
+.mapa-footer {
+    background-color: rgba(145, 140, 140, 0.75);
+    padding: 10px;
+    border-radius: 10px;
+    width: 32%;
+    margin-bottom: 10px;
+    display: flex; /* Asegurar que el contenido del mapa también se estire */
+    align-items: center; /* Centrar el contenido del mapa */
+}
+
 .imagen-footer:hover,
 .mapa-footer:hover,
-.texto-footer:hover{
-    background-color: rgba(
-      0,
-      0,
-      0,
-      0.75
-    );
+.texto-footer:hover {
+    background-color: rgba(0, 0, 0, 0.75);
 }
-.mapa-footer{
-    background-color: rgba(
-      145,
-      140,
-      140,
-      0.75
-    );
+
+.imagen-footer img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.texto-footer {
+    color: aliceblue;
+    text-align: justify;
+    font-weight: bold;
     padding: 10px;
-    border-radius: 10px;
-    width: 400px;
-    height: 200px;
 }
+
+.mapa-footer iframe {
+    width: 100%;
+    height: 100%; /* Cambiado a 100% para ocupar toda la altura del contenedor */
+}
+
 @keyframes zoom {
     0% {
         transform: scale(0); /* Tamaño original */
@@ -184,9 +180,32 @@
     animation: zoom 8s infinite;
 }
 
+/* Responsiveness */
 @media (max-width: 768px) {
-    /* Estilos para dispositivos con ancho máximo de 768px (tabletas y móviles) */
     .section {
         padding: 20px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .container-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen-footer, .texto-footer, .mapa-footer {
+        width: 100%;
+    }
+
+    .textoSuperpuesto {
+        font-size: 2vw; /* Ajusta el tamaño del texto dinámicamente para pantallas más pequeñas */
+        max-width: 80%; /* Asegura que el texto no exceda el 90% del ancho del contenedor */
     }
 }
