@@ -212,6 +212,40 @@ img {
 .lista li {
   display: inline-block;
   margin-right: 10px;
+  position: relative; /* Necesario para posicionar el tooltip */
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Coloca el tooltip encima del texto */
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.a:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  text-align: center;
 }
 
 /* Media Queries para hacer la página responsiva */
