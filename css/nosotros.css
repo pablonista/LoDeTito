@@ -38,7 +38,7 @@ body, h1, h2, h3, p {
     padding: 10px;
     font-size: 1.2vw; /* Ajusta el tamaño del texto dinámicamente */
     max-width: 80%; /* Asegura que el texto no exceda el 90% del ancho del contenedor */
-    max-height: 90%;
+    max-height: 100%;
     box-sizing: border-box; /* Incluye el padding en el tamaño total */
 }
 
