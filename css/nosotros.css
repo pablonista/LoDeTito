@@ -35,9 +35,9 @@ body, h1, h2, h3, p {
     color: #EAD7BB;
     text-align:justify;
     background: linear-gradient(rgba(94, 45, 5, 0.5), rgba(0, 0, 0, 0.8));
-    padding: 10px;
-    font-size: 1.2vw; /* Ajusta el tamaño del texto dinámicamente */
-    max-width: 80%; /* Asegura que el texto no exceda el 90% del ancho del contenedor */
+    padding: 1px;
+    font-size: 1.5vw; /* Ajusta el tamaño del texto dinámicamente */
+    max-width: 70%; /* Asegura que el texto no exceda el 90% del ancho del contenedor */
     max-height: 100%;
     box-sizing: border-box; /* Incluye el padding en el tamaño total */
 }
