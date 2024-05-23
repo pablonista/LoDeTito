@@ -7,6 +7,11 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
+    height: 100vh;
+    overflow: hidden; /* Evitar el desbordamiento vertical */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 html, body {
@@ -23,7 +28,7 @@ form {
 .login-container, .register-container {
     width: 80%;
     max-width: 400px;
-    margin: 10px auto;
+    margin: 8px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
