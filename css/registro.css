@@ -19,6 +19,12 @@ html, body {
     height: 100%;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -84,7 +90,7 @@ input[type="submit"]{
   }
   
 
-.btn-cancelar a {
+/* .btn-cancelar a {
     width: 100%;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -98,8 +104,23 @@ input[type="submit"]{
     font-family: "Poppins", sans-serif;
     text-align: center;
     text-decoration: none;
-    box-sizing: border-box; /* Añadir esto para que el padding esté incluido en el tamaño del botón */
+    box-sizing: border-box; Añadir esto para que el padding esté incluido en el tamaño del botón
+} */
+.btn-cancelar a {
+    display: block; /* Asegura que el enlace se comporte como un bloque */
+    width: 100%; /* Haz que el enlace ocupe todo el ancho del contenedor */
+    padding: 10px; /* Asegura un padding consistente */
+    border: none;
+    border-radius: 5px;
+    background-color: #f80505;
+    color: white;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
 }
+
 input[type="submit"]:hover{
     background-color: #45a049;
 }
