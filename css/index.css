@@ -175,6 +175,16 @@ ul.dropdown-menu {
   font-size: 2rem;
 }
 
+.carousel-container {
+  position: relative;
+  margin-top: 1px; /* Espacio para evitar la superposición con el navbar */
+  margin-bottom: 1px;
+}
+
+.carousel-item img {
+  max-height: 78vh; /* Limita la altura máxima de las imágenes del carrusel */
+}
+
 .carousel-caption {
   height: 40%;
   align-items: center;
@@ -188,6 +198,7 @@ img {
 .foot {
   background-color: var(--color-footer-bg);
   height: 10%;
+  border-radius: 0 0 5px 5px;
 }
 
 .lista {

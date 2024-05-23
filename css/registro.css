@@ -63,6 +63,21 @@ input[type="submit"]{
     box-sizing: border-box; /* Añadir esto para que el padding esté incluido en el tamaño del botón */
 }
 
+.forgot-password {
+    text-align: center; /* Centrar el contenido horizontalmente */
+    margin-top: 10px;   /* Agregar un margen superior si es necesario */
+  }
+  
+  .forgot-password a {
+    display: inline-block; /* Asegurar que los enlaces se comporten como elementos en línea bloque */
+    margin: 5px 0;         /* Agregar un margen superior e inferior */
+  }
+  
+  .forgot-password p {
+    margin: 5px 0;         /* Agregar un margen superior e inferior */
+  }
+  
+
 .btn-cancelar a {
     width: 100%;
     padding-top: 2%;
