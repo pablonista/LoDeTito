@@ -17,7 +17,7 @@ body, h1, h2, h3, p {
 /* Imagen y texto superpuesto */
 .contenido {
     position: relative;
-    margin-top: 5px; /* Añade margen superior para evitar superposición con el navbar */
+    margin-top: 1px; /* Añade margen superior para evitar superposición con el navbar */
 }
 
 .contenido img {
@@ -28,7 +28,7 @@ body, h1, h2, h3, p {
 
 .textoSuperpuesto {
     position: absolute; 
-    top: 44%; 
+    top: 49.9%; 
     left: 50%; 
     transform: translate(-50%, -50%);
     color: #EAD7BB;
@@ -37,7 +37,7 @@ body, h1, h2, h3, p {
     padding: 10px;
     font-size: 1.5vw; /* Ajusta el tamaño del texto dinámicamente */
     max-width: 80%; /* Asegura que el texto no exceda el 90% del ancho del contenedor */
-    max-height: 80%;
+    max-height: 100%;
     box-sizing: border-box; /* Incluye el padding en el tamaño total */
 }
 
