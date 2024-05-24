@@ -139,6 +139,24 @@ h2{
   color: black;
 }
 
+.imagen-menu {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .imagen-menu {
+    width: 80%; /* Cambia el ancho en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 400px) {
+  .imagen-menu {
+    width: 60%; /* Cambia el ancho en pantallas muy pequeñas */
+  }
+}
+
 @media (max-width: 768px) {
   .cabeceraTabla {
       flex-direction: column;
