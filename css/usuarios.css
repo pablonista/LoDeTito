@@ -117,6 +117,7 @@ h2{
 .tabla-contenedor th {
   background-color: rgba(31, 58, 104, 0.75);
   color: white;
+  font-size: 1vw;
 }
 
 /* Limita la altura de la tabla y permite el desplazamiento */
@@ -131,6 +132,7 @@ h2{
   width: 100%;
   table-layout: fixed;
   color: white;
+  font-size: 1vw;
 }
 
 .tabla-contenedor tbody tr:hover {
