@@ -7,7 +7,9 @@ body{
   background-image: url(../assets/imagenes/Bodegon01.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
   font-family: 'Poppins', sans-serif;
+  overflow: hidden;
 }
 
 /*css fuente*/
@@ -93,7 +95,7 @@ h2{
 
 .tabla-contenedor {
   width: 100%;
-  margin: 1% auto;
+  margin: 2% auto;
   background-color: rgba(95, 158, 160, 0.75);
   border-radius: 10px;
   overflow: hidden;
@@ -108,7 +110,7 @@ h2{
 
 .tabla-contenedor th, .tabla-contenedor td {
   padding: 10px;
-  text-align: left;
+  text-align: center;
   border-bottom: 1px solid #ddd;
 }
 
